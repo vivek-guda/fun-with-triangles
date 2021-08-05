@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Fun With Trinagles</title>
+  </head>
+  <body>
+    <div id="angles-cont">
+      <a class="goback-btn" href="./index.html">Go Back</a>
+      <h1>Calculate Area</h1>
+      <p id="area-ques">
+        Select an option below as per the data you have for a triangle
+      </p>
+      <form id="selection-form">
+        <div class="radio">
+          <label>
+            <input id="radio1" type="radio" name="radAnswer" /> If you have base
+            and height length
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input id="radio2" type="radio" name="radAnswer" /> If you have
+            length of 3 sides
+          </label>
+        </div>
+      </form>
+
+      <div id="r1">
+        <form id="form1">
+          <div class="inp-div">
+            <input id="r1-i1" type="number" placeholder="base" required />
+            <input id="r1-i2" type="number" placeholder="height" required />
+          </div>
+          <input id="submit-btn" type="submit" />
+        </form>
+        <div class="output-2">
+          <p id="area-output-1">Output will be displayed here</p>
+        </div>
+      </div>
+      <div id="r2">
+        <form id="form2">
+          <div class="inp-div">
+            <input id="r2-i1" type="number" placeholder="a" required />
+            <input id="r2-i2" type="number" placeholder="b" required />
+            <input id="r2-i3" type="number" placeholder="c" required />
+          </div>
+          <input id="submit-btn" type="submit" />
+        </form>
+        <div class="output-2">
+          <p id="area-output-2">Output will be displayed here</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="./calcArea.js"></script>
+  </body>
+</html>

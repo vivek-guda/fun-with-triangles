@@ -1,0 +1,199 @@
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  background-color: rgb(116, 188, 216);
+  color: rgb(3, 23, 59);
+}
+
+#container {
+  max-width: 700px;
+  height: 100vh;
+  margin: auto;
+  padding: 0 2rem;
+  /* background-color: green; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  margin-top: 0;
+  margin-bottom: 3rem;
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: rgb(3, 23, 59);
+}
+
+#cell-cont {
+  width: fit-content;
+  width: -moz-fit-content;
+  margin: auto;
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 1rem;
+}
+
+.cell {
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 1.25rem;
+  background-color: rgb(221, 238, 240);
+}
+
+#cell-cont a {
+  text-decoration: none;
+  color: rgb(3, 23, 59);
+  /* font-weight: 700; */
+}
+
+@media (max-width: 390px) {
+  #cell-cont {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    padding-bottom: 3rem;
+  }
+  #container {
+    height: fit-content;
+    height: -moz-fit-content;
+  }
+  #container h1 {
+    padding-top: 4rem;
+  }
+  .goback-btn {
+    margin-top: 3rem;
+  }
+}
+
+#angles-cont {
+  max-width: 700px;
+  height: 100vh;
+  margin: auto;
+  padding: 0 2rem;
+  /* background-color: green; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#angles-cont h1 {
+  padding-top: 3rem;
+}
+
+form input {
+  border: none;
+  border-radius: 0.5rem;
+  background-color: rgb(221, 238, 240);
+}
+
+.inp-div input {
+  width: 70px;
+  height: 40px;
+  padding: 0 0.5rem;
+  margin: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.inp-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+#submit-btn {
+  width: 100%;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: rgb(3, 23, 59);
+  color: white;
+}
+
+#output {
+  width: 100%;
+  min-height: 75px;
+  text-align: center;
+  border: 1px solid rgb(3, 23, 59);
+  color: rgb(3, 23, 59);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.goback-btn {
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border: 1px solid black;
+  border-radius: 0.75rem;
+  background-color: rgb(3, 23, 59);
+  color: white;
+}
+
+.output-2 {
+  width: 100%;
+  min-height: 75px;
+  box-sizing: border-box;
+  padding: 1rem;
+  text-align: center;
+  border: 1px solid rgb(3, 23, 59);
+  color: rgb(3, 23, 59);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+#r1,
+#r2 {
+  display: none;
+  margin-top: 3rem;
+}
+
+#area-ques {
+  margin-top: 0;
+  font-size: 1.2rem;
+}
+
+.radio {
+  margin-bottom: 0.75rem;
+  font-size: 1.1rem;
+}
+
+.question {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+#quiz-form div {
+  border: 1px solid rgb(3, 23, 59);
+  padding: 1.5rem;
+  margin-top: 1rem;
+  color: rgb(3, 23, 59);
+}
+
+.quiz-submit {
+  margin-top: 3rem !important;
+  margin-bottom: 2rem !important;
+}
+
+.quiz-head {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+#container .output-2 {
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Fun With Trinagles</title>
+  </head>
+  <body>
+    <div id="container">
+      <a class="goback-btn" href="./index.html">Go Back</a>
+      <h1 class="quiz-head">Quiz on Trinagles</h1>
+      <form id="quiz-form">
+        <div class="quesDivs">
+          <label class="question"
+            >1. If a triangle has angles 135<sup>0</sup>, 15<sup>0</sup>,
+            30<sup>0</sup>. Is it an obtuse triangle?
+          </label>
+          <label>
+            <input type="radio" name="q1" value="option1" required /> yes
+          </label>
+          <label>
+            <input type="radio" name="q1" value="option2" required /> no
+          </label>
+        </div>
+        <div class="quesDivs">
+          <label class="question"
+            >2. If a triangle has angles 115<sup>0</sup>, 25<sup>0</sup>,
+            40<sup>0</sup>. Is it an acute triangle?</label
+          >
+          <label>
+            <input type="radio" name="q2" value="option1" required /> yes
+          </label>
+          <label>
+            <input type="radio" name="q2" value="option2" required /> no
+          </label>
+        </div>
+        <div class="quesDivs">
+          <label class="question"
+            >3. If a triangle has angles 90<sup>0</sup>, 60<sup>0</sup>,
+            30<sup>0</sup>. Is it a right angle triangle?
+          </label>
+          <label>
+            <input type="radio" name="q3" value="option1" required /> yes
+          </label>
+          <label>
+            <input type="radio" name="q3" value="option2" required /> no
+          </label>
+        </div>
+        <div class="quesDivs">
+          <label class="question"
+            >4. A triangle has angles 60<sup>0</sup>, 60<sup>0</sup>,
+            60<sup>0</sup>. Is it an equilateral triangle?
+          </label>
+          <label>
+            <input type="radio" name="q4" value="option1" required /> yes
+          </label>
+          <label>
+            <input type="radio" name="q4" value="option2" required /> no
+          </label>
+        </div>
+        <div class="quesDivs">
+          <label class="question"
+            >5. If a triangle has angles 25<sup>0</sup>, 75<sup>0</sup>,
+            80<sup>0</sup>. Is it an acute triangle?
+          </label>
+          <label>
+            <input type="radio" name="q5" value="option1" required /> yes
+          </label>
+          <label>
+            <input type="radio" name="q5" value="option2" required /> no
+          </label>
+        </div>
+        <input id="submit-btn" class="quiz-submit" type="submit" />
+      </form>
+
+      <div class="output-2">
+        <p class="scoreHere">Your score will be displayed here</p>
+      </div>
+    </div>
+
+    <script src="./quiz.js"></script>
+  </body>
+</html>
